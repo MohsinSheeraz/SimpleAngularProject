@@ -1,0 +1,13 @@
+<div class="my-3" *ngIf="todo">
+  <h5
+    style="font-family: Poppins, sans-serif; font-weight: 400; font-size: 23px"
+  >
+    {{ todo.title }}
+  </h5>
+  <p
+    style="font-family: Poppins, sans-serif; font-weight: 300; font-size: 16px"
+  >
+    {{ todo.desc }}
+  </p>
+  <button  style="font-family: Poppins, sans-serif;" class="btn btn-sm btn-danger" (click)="onClick(todo)">Delete</button>
+</div>
